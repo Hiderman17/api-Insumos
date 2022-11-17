@@ -7,7 +7,7 @@ const {dbConnetion} =require('../database/config')
 class Server{
     constructor(){
         this.app=express()
-        this.port = process.env.port  
+        this.port = process.env.PORT  
         this.insumosPath = '/api/insumos'
         this.conetarDB()
         this.middlewares()
